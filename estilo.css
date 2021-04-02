@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Serif', serif;
+}
+
+nav {
+    background: #1f2421;
+    height: 80px;
+    width: 100%;
+
+}
+
+label {
+    color: #DCE1DE;
+    font-size:  35px;
+    line-height: 80px;
+    font-weight: bold;
+    padding: 0 80px;
+    cursor: pointer;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+
+nav ul li a {
+    color:#DCE1DE;
+    font-size: 17px;
+    padding:  7px 13px;
+    text-transform: uppercase;
+
+}
+
+a:active, a:hover {
+    color: #216839;
+    transition: .3s;
+
+}
+
+.menu {
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+section {
+    background:  url(bg.png);
+    background-size: cover;
+    height: calc(100vh - 80px);
+
+}
+
+@media (max-width: 952px) {
+    label {
+        font-size: 30px;
+        padding-left: 50px;
+    
+    }
+
+    nav ul li a {
+        font-size: 16px;
+
+    }
+}
+
+@media (max-width: 859px) {
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #0f0101;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: .5s; 
+    }
+    ul.aberto {
+        left: 0;
+    }
+    nav ul li {
+        display: block;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover, a:active {
+        color:#000000;
+    }
+}
